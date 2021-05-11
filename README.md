@@ -12,12 +12,14 @@
 * <a href="https://www.terraform.io/downloads.html">Download Terraform</a>
 
 * To login to aws from Cli
+
 ```bash
 aws configure
 ```
 It will ask the secret key, access key and the region.The access and secret key can be obtained from Aws dashboard.
 
 * Install terraform and make a profile in aws so as to not expose our secret key
+
 ```
 aws configure --profile sahil
 ```
@@ -32,4 +34,9 @@ terraform init
 
 ```
 terraform apply --auto-approve
+```
+
+* To destroy the setup run
+```
+terraform destroy --auto-approve
 ```
